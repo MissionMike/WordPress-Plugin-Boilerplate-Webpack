@@ -2,6 +2,36 @@
 
 A fork of [WordPress Plugin Boilerplate](https://github.com/DevinVinson/WordPress-Plugin-Boilerplate), with support for a webpack development workflow.
 
+## Prerequisites:
+
+- You'll need to have node and npm installed. You can find out more about that on [npmjs.com](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) 
+
+# Installation:
+
+1. Within your /wp-content/plugins/ directory, create a *new* directory for your plugin. For example, if your plugin is called "My Cool Plugin" then name the directory /wp-content/plugins/**my-cool-plugin**/
+
+2. From within your newly-created directory, clone this repo directly into it (be sure to include the trailing dot): 
+
+```bash
+git checkout https://github.com/MissionMike/wordpress-plugin-boilerplate-webpack.git .
+```
+
+3. You'll then need to rename some specific text and files within the folder in order to change "Plugin Name" (boilerplate text) to "My Cool Plugin" (example).
+
+## Development
+
+To start webpack, run the command below, and the webpack dev server should begin watching files and serving them from https://1.2.3.4:3006 (where 1.2.3.4 is your public IP address). Hot-reloading is enabled and your site should auto-refresh whenever you edit any .js, .css/.scss, .html, or .php files within the plugin directory.
+
+```bash
+npm run watch -- --domain="https://your-site-domain.com/"
+```
+
+**Note:** You can specify the port for your webpack dev server by including a ```--port=XXXX``` option in the command above.
+
+## Pre-Deployment
+
+**Important!** Always run ```npm run build``` prior to publishing your plugin, or committing final changes. When watching files during develoment (i.e. ```npm run watch```), the JS and CSS .min files in /admin/dist/ and /public/dist/ will **NOT** be fully optimized by default. You can change this in your ```webpack.dev.js``` settings, however using production-level minification settings during development is bound to slow down your hot-reloading. Therefore, in order to fully optimize them as a production build, running ```npm run build``` is imperative.
+
 # WordPress Plugin Boilerplate
 
 A standardized, organized, object-oriented foundation for building high-quality WordPress Plugins.
@@ -13,7 +43,7 @@ The WordPress Plugin Boilerplate includes the following files:
 * `.gitignore`. Used to exclude certain files from the repository.
 * `CHANGELOG.md`. The list of changes to the core project.
 * `README.md`. The file that you’re currently reading.
-* A `plugin-name` directory that contains the source code - a fully executable WordPress plugin.
+* Fully executable WordPress plugin code.
 
 ## Features
 
@@ -33,10 +63,6 @@ The Boilerplate can be installed directly into your plugins folder "as-is". You 
 * change `PLUGIN_NAME_` to `EXAMPLE_ME_`
 
 It's safe to activate the plugin at this point. Because the Boilerplate has no real functionality there will be no menu items, meta boxes, or custom post types added until you write the code.
-
-## WordPress.org Preparation
-
-The original launch of this version of the boilerplate included the folder structure needed for using your plugin on WordPress.org. That folder structure has been moved to its own repo here: https://github.com/DevinVinson/Plugin-Directory-Boilerplate
 
 ## Recommended Tools
 
@@ -81,14 +107,6 @@ Note that if you include your own classes, or third-party libraries, there are t
 Note that previous versions of the Boilerplate did not include `Plugin_Name_Loader` but this class is used to register all filters and actions with WordPress.
 
 The example code provided shows how to register your hooks with the Loader class.
-
-### What About Other Features?
-
-The previous version of the WordPress Plugin Boilerplate included support for a number of different projects such as the [GitHub Updater](https://github.com/afragen/github-updater).
-
-These tools are not part of the core of this Boilerplate, as I see them as being additions, forks, or other contributions to the Boilerplate.
-
-The same is true of using tools like Grunt, Composer, etc. These are all fantastic tools, but not everyone uses them. In order to  keep the core Boilerplate as light as possible, these features have been removed and will be introduced in other editions, and will be listed and maintained on the project homepage.
 
 # Credits
 

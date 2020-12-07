@@ -1,5 +1,5 @@
 # Changelog
-## [4.0.0] 2020-12-06
+## [4.0.0] - 2020-12-06
 ### Added
 - webpack support for improved development workflow
 
