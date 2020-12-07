@@ -16,9 +16,9 @@ const config = {
 		public: "./public/src/js/plugin-name-public.js",
 	},
 	output: {
-		path: path.resolve(__dirname, "dist"),
-		filename: "./js/plugin-name-[name].min.js",
-		sourceMapFilename: "./js/plugin-name-[name].js.map",
+		path: path.resolve(__dirname),
+		filename: "./[name]/dist/js/plugin-name-[name].min.js",
+		sourceMapFilename: "./[name]/dist/js/plugin-name-[name].js.map",
 	},
 	devtool: "source-map",
 	module: {
@@ -85,8 +85,8 @@ const config = {
 	},
 	plugins: [
 		new MiniCssExtractPlugin({
-			filename: "./css/plugin-name-[name].min.css",
-			chunkFilename: "./css/[id].css",
+			filename: "./[name]/dist/css/plugin-name-[name].min.css",
+			chunkFilename: "./[name]/dist/css/[id].css",
 			devtool: "source-map",
 		}),
 	],
