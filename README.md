@@ -32,7 +32,7 @@ npm run watch -- --domain="https://your-site-domain.com/"
 
 **Important!** Always run ```npm run build``` prior to publishing your plugin, or committing final changes. When watching files during develoment (i.e. ```npm run watch```), the JS and CSS .min files in /admin/dist/ and /public/dist/ will **NOT** be fully optimized by default. You can change this in your ```webpack.dev.js``` settings, however using production-level minification settings during development is bound to slow down your hot-reloading. Therefore, in order to fully optimize them as a production build, running ```npm run build``` is imperative.
 
-# WordPress Plugin Boilerplate
+# More About the Original [WordPress Plugin Boilerplate](https://github.com/DevinVinson/WordPress-Plugin-Boilerplate)
 
 A standardized, organized, object-oriented foundation for building high-quality WordPress Plugins.
 
