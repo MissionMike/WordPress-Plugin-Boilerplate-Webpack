@@ -1,3 +1,7 @@
+# WordPress Plugin Boilerplate with webpack
+
+A fork of [WordPress Plugin Boilerplate](https://github.com/DevinVinson/WordPress-Plugin-Boilerplate), with support for a webpack development workflow.
+
 # WordPress Plugin Boilerplate
 
 A standardized, organized, object-oriented foundation for building high-quality WordPress Plugins.
