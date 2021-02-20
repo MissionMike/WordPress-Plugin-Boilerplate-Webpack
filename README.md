@@ -1,3 +1,5 @@
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
 # WordPress Plugin Boilerplate with webpack
 
 A fork of [WordPress Plugin Boilerplate](https://github.com/DevinVinson/WordPress-Plugin-Boilerplate), with support for a webpack development workflow.
@@ -16,7 +18,10 @@ A fork of [WordPress Plugin Boilerplate](https://github.com/DevinVinson/WordPres
 git checkout https://github.com/MissionMike/wordpress-plugin-boilerplate-webpack.git .
 ```
 
-3. You'll then need to rename some specific text and files within the folder in order to change "Plugin Name" (boilerplate text) to "My Cool Plugin" (example).
+3. You'll then need to rename some specific text and files within the folder in order to change "Plugin Name" (boilerplate text) to "My Cool Plugin" (example). There are two ways to do this:
+
+- Manually find every file with "plugin-name" in the filename and rename it to your own slug.
+- On Linux, open setup.sh and change the "example-me" sample names in lines 6 through 10, and run ```sh setup.sh```
 
 ## Development
 
