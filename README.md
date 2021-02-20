@@ -15,7 +15,7 @@ A fork of [WordPress Plugin Boilerplate](https://github.com/DevinVinson/WordPres
 2. From within your newly-created directory, clone this repo directly into it (be sure to include the trailing dot): 
 
 ```bash
-git checkout https://github.com/MissionMike/wordpress-plugin-boilerplate-webpack.git .
+git checkout https://github.com/missionmike/wordpress-plugin-boilerplate-webpack.git .
 ```
 
 3. You'll then need to rename some specific text and files within the folder in order to change "Plugin Name" (boilerplate text) to "My Cool Plugin" (example). There are two ways to do this:
