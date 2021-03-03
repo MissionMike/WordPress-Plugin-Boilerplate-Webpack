@@ -21,7 +21,7 @@ git checkout https://github.com/missionmike/wordpress-plugin-boilerplate-webpack
 3. You'll then need to rename some specific text and files within the folder in order to change "Plugin Name" (boilerplate text) to "My Cool Plugin" (example). There are two ways to do this:
 
 - Manually find every file with "plugin-name" in the filename and rename it to your own slug.
-- On Linux, open setup.sh and change the "example-me" sample names in lines 6 through 10, and run ```sh setup.sh```
+- On Linux with bash, run ```sh setup.sh``` and follow the prompts.
 
 ## Development
 
